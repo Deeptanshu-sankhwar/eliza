@@ -1,72 +1,76 @@
 # @elizaos/plugin-taylor
 
-A plugin providing core functionality and basic actions for ElizaOS agents.
+A plugin providing crypto news and market analysis capabilities for ElizaOS agents.
 
 ## Description
 
-The Bootstrap plugin enables fundamental agent behaviors including conversation management, room interactions, and fact tracking. It provides essential actions and evaluators that form the foundation of agent interactions.
+The Taylor plugin enables agents to fetch, analyze, and share crypto news and market updates. It provides specialized actions for real-time crypto news aggregation, market analysis, and price tracking.
 
 ## Installation
 
 ```bash
-pnpm install @elizaos/plugin-bootstrap
+pnpm install @elizaos/plugin-taylor
 ```
 
 ## Features
 
-### 1. Conversation Management
+### 1. Crypto News Management
 
-- NONE action for basic responses
-- CONTINUE action for follow-ups
-- IGNORE action for appropriate disengagement
-- Built-in conversation flow control
+- FETCH_NEWS action for real-time crypto news updates
+- Automatic news summarization under 280 characters
+- Source verification and credibility checking
+- Breaking news alerts and updates
 
-### 2. Room Control
+### 2. Market Analysis
 
-- Follow/Unfollow room functionality
-- Mute/Unmute capabilities
-- Automatic engagement level tracking
-- Smart participation management
+- Price tracking and analysis
+- Market sentiment evaluation
+- Technical indicator monitoring
+- Volume and liquidity analysis
+- Support for multiple exchanges and pairs
 
-### 3. Fact Management
+### 3. News Categories
 
-- Automatic fact extraction
-- Categorization of claims
-- Deduplication of known information
-- Support for multiple fact types:
-    - Permanent facts
-    - Status updates
-    - Opinions
-    - Biographical information
+- Breaking news
+- Market updates
+- Regulatory changes
+- DeFi developments
+- NFT market trends
+- Exchange updates
+- Security incidents
+- Project launches
 
-### 4. Goal Tracking
+### 4. Analysis Features
 
-- Track objective progress
-- Update goal statuses
-- Monitor completion states
-- Automatic progress evaluation
+- Real-time price updates
+- Market trend analysis
+- Volume analysis
+- Sentiment tracking
+- Technical analysis
+- Risk assessment
 
 ## Providers
 
-### 1. Boredom Provider
+### 1. News Provider
 
-- Tracks engagement levels
-- Provides status messages
-- Monitors conversation quality
-- Adjusts participation accordingly
+- Aggregates crypto news from multiple sources
+- Verifies news credibility
+- Categorizes news by importance
+- Tracks breaking developments
 
-### 2. Facts Provider
+### 2. Market Provider
 
-- Manages fact database
-- Retrieves relevant information
-- Formats fact summaries
-- Maintains fact context
+- Tracks price movements
+- Monitors trading volumes
+- Analyzes market sentiment
+- Provides technical indicators
 
-### 3. Time Provider
+### 3. Analysis Provider
 
-- Provides UTC timestamps
-- Human-readable formatting
-- Time-based operation support
+- Generates market insights
+- Provides risk assessments
+- Tracks regulatory changes
+- Monitors market trends
 
 ## Development
 
@@ -91,87 +95,62 @@ pnpm run lint
 
 ## Dependencies
 
-- @elizaos/core: workspace:\*
+- @elizaos/core: workspace:*
+- axios: ^1.6.0
 
 ## Future Enhancements
 
-1. **Enhanced Conversation Management**
+1. **Enhanced News Analysis**
 
-    - Advanced context tracking
-    - Multi-thread conversation support
-    - Conversation state persistence
-    - Improved conversation flow control
-    - Natural language understanding improvements
+    - Advanced sentiment analysis
+    - Impact prediction
+    - Source credibility scoring
+    - News categorization improvements
+    - Real-time news verification
 
-2. **Advanced Room Control**
+2. **Market Analysis Improvements**
 
-    - Dynamic room creation and management
-    - Room permission system
-    - Advanced moderation tools
-    - Room analytics and insights
-    - Cross-room communication features
+    - Advanced technical analysis
+    - Pattern recognition
+    - Volume profile analysis
+    - Market correlation tracking
+    - Risk assessment models
 
-3. **Expanded Fact Management**
+3. **Expanded News Sources**
 
-    - Enhanced fact verification system
-    - Fact relationship mapping
-    - Automated fact updating
-    - Fact confidence scoring
-    - Cross-reference system
-    - Fact expiration management
+    - Additional news APIs
+    - Social media monitoring
+    - Project announcements
+    - Regulatory updates
+    - Market research integration
 
-4. **Goal System Improvements**
+4. **Analysis Tools**
 
-    - Multi-step goal planning
-    - Goal dependency tracking
-    - Progress visualization
-    - Goal priority management
-    - Automated milestone tracking
-    - Goal optimization suggestions
+    - Custom indicators
+    - Backtesting capabilities
+    - Portfolio tracking
+    - Risk management tools
+    - Market prediction models
 
-5. **Provider Enhancements**
+5. **Integration Features**
 
-    - Improved boredom detection
-    - Advanced engagement metrics
-    - Enhanced fact retrieval algorithms
-    - Real-time status updates
-    - Provider performance analytics
+    - Exchange API integration
+    - Trading platform connectivity
+    - Portfolio management
+    - Alert system
+    - Custom notification rules
 
-6. **Memory Management**
+6. **Developer Tools**
 
-    - Enhanced memory prioritization
-    - Memory compression techniques
-    - Long-term memory storage
-    - Memory relationship mapping
-    - Context-aware recall
-
-7. **Developer Tools**
-
-    - Enhanced debugging capabilities
-    - Testing framework improvements
-    - Plugin development templates
+    - Testing framework
+    - Performance monitoring
+    - Debugging tools
     - Documentation generator
-    - Performance profiling tools
-
-8. **Integration Features**
-    - Enhanced plugin interoperability
-    - External service connectors
-    - API gateway integration
-    - Webhook system improvements
-    - Third-party platform support
-
-We welcome community feedback and contributions to help prioritize these enhancements.
+    - Plugin templates
 
 ## Contributing
 
 Contributions are welcome! Please see the [CONTRIBUTING.md](CONTRIBUTING.md) file for more information.
-
-## Credits
-
-Special thanks to:
-
-- The Eliza Core development team
-- The Eliza community for their contributions and feedback
 
 ## License
 
